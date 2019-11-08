@@ -21,16 +21,16 @@ public class ProductController{
         List<Product> list = productservice.getProductList();	
     
     	ModelAndView  mv = new ModelAndView();
-    	mv.setViewName("productList");  // 逻辑视图(假的)    物理视图  （/WEB-INF/productList.jsp）
+    	mv.setViewName("productList");  // 閫昏緫瑙嗗浘(鍋囩殑)    鐗╃悊瑙嗗浘  锛�/WEB-INF/productList.jsp锛�
     
-    	// addObject(String key,Object Value)  =>该用法和request用户一样
+    	// addObject(String key,Object Value)  =>璇ョ敤娉曞拰request鐢ㄦ埛涓�鏍�
     	
     	mv.addObject("productList", list);
     	
     	return mv;
     
 
-      
+      //++
       
     }
 }
